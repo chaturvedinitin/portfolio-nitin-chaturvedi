@@ -1,389 +1,854 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nitin Chaturvedi | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Cal+Sans&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Cal+Sans&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Anton&family=Cal+Sans&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Cal+Sans&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
-        .hero {
-            font-family: "Playfair Display", serif;
-            font-optical-sizing: auto;
-            font-weight: <weight>;
-            font-style: normal;
-        }
+      .hero {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+      }
 
-
-        * {
-            font-family: "Playfair Display", serif;
-            font-optical-sizing: auto;
-            font-weight: <weight>;
-            font-style: normal;
-        }
+      #body {
+        font-family: "Playfair Display", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        /* color: white; */
+      }
     </style>
-</head>
+  </head>
 
-<body class="bg-[#FFFCF2] text-[#252422]">
-    <div id="overlay" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-[#403D39]/80">
-        <div class="bg-white rounded-xl shadow-2xl p-8 w-full max-w-xs sm:max-w-sm md:max-w-md">
-            <nav>
-                <ul class="flex flex-col gap-4">
-                    <li>
-                        <a href="https://leetcode.com/chaturvedinitin/" target="_blank" rel="noopener noreferrer"
-                            class="block border rounded-lg px-6 py-4 bg-black text-green-500 text-center text-lg font-semibold hover:bg-[#252422] transition">
-                            LeetCode
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/chaturvedinitin"
-                            class="block border rounded-lg px-6 py-4 bg-black text-green-500 text-center text-lg font-semibold hover:bg-[#252422] transition">
-                            Github
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://codeforces.com/profile/chaturvediinitin"
-                            class="block border rounded-lg px-6 py-4 bg-black text-green-500 text-center text-lg font-semibold hover:bg-[#252422] transition">
-                            Codeforces
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <button id="closeOverlay"
-                class="mt-6 w-full py-2 rounded-lg bg-[#EB5E28] text-white font-bold hover:bg-[#d14a1a] transition">Close</button>
-        </div>
+  <body class="bg-[#000000] text-[#F2F2F2]">
+    <div
+      id="overlay"
+      class="hidden fixed inset-0 z-50 flex items-center justify-center bg-[#403D39]/80"
+    >
+      <div
+        class="bg-white rounded-xl shadow-2xl p-8 w-full max-w-xs sm:max-w-sm md:max-w-md"
+      >
+        <nav>
+          <ul class="flex flex-col gap-4">
+            <li>
+              <a
+                href="https://leetcode.com/chaturvedinitin/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block border rounded-lg px-6 py-4 bg-black text-green-500 text-center text-lg font-semibold hover:bg-[#252422] transition"
+              >
+                LeetCode
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/chaturvedinitin"
+                class="block border rounded-lg px-6 py-4 bg-black text-green-500 text-center text-lg font-semibold hover:bg-[#252422] transition"
+              >
+                Github
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://codeforces.com/profile/chaturvediinitin"
+                class="block border rounded-lg px-6 py-4 bg-black text-green-500 text-center text-lg font-semibold hover:bg-[#252422] transition"
+              >
+                Codeforces
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          id="closeOverlay"
+          class="mt-6 w-full py-2 rounded-lg bg-[#EB5E28] text-white font-bold hover:bg-[#d14a1a] transition"
+        >
+          Close
+        </button>
+      </div>
     </div>
 
-    <div id="file" class="fixed inset-0 flex items-center justify-center z-40 bg-black/80 hidden">
-        <div
-            class="w-full max-w-3xl h-[90vh] bg-white rounded-xl shadow-2xl overflow-hidden flex items-center justify-center">
-            <iframe class="pdf" src="https://docs.google.com/document/d/1J_XRqB1gJbbWpsvfG5miRVmiUbwzhMnl/preview"
-                width="100%" height="100%" style="border:none; height:100%; width:100%;">
-            </iframe>
-        </div>
+    <!-- Document resume -->
+    <div
+      id="file"
+      class="fixed inset-0 flex items-center justify-center z-40 bg-black/60 hidden"
+    >
+      <div
+        class="w-full max-w-3xl h-[95vh] bg-white border-2 rounded-3xl shadow-2xl overflow-hidden flex items-center justify-center"
+      >
+        <iframe
+          class="pdf"
+          src="https://docs.google.com/document/d/1J_XRqB1gJbbWpsvfG5miRVmiUbwzhMnl/preview"
+          width="100%"
+          height="100%"
+          style="border: none; height: 100%; width: 100%"
+        >
+        </iframe>
+      </div>
 
-        <button id="close" class="fixed top-1 left-1/2 border-2 border-red rounded-full bg-black">❌</button>
+      <button
+        id="close"
+        class="fixed top-4 right-8 border-2 border-white rounded-full bg-black p-2"
+      >
+        ❌
+      </button>
     </div>
+
+    <!-- //to provide settings on the word file -->
     <!-- <object class="pdf" 
-            data=
-                "https://docs.google.com/document/d/1J_XRqB1gJbbWpsvfG5miRVmiUbwzhMnl/edit?usp=drive_link&ouid=101139583786478365075&rtpof=true&sd=true"
-            width="800"
-            height="500">
+    data=
+        "https://docs.google.com/document/d/1J_XRqB1gJbbWpsvfG5miRVmiUbwzhMnl/edit?usp=drive_link&ouid=101139583786478365075&rtpof=true&sd=true"
+    width="800"
+    height="500">
     </object> -->
+
     <div id="body">
-        <section id="home" class="hero min-h-screen md:min-h-[40vh] lg:min-h-screen">
-            <header class="flex flex-col md:flex-row justify-between items-center p-4 md:p-6 gap-4">
-                <h1 class="text-2xl font-bold text-[#03045E]">Nitin Chaturvedi</h1>
+      <header
+        id="site-header"
+        class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/20 transition-transform duration-300"
+      >
+        <div
+          class="max-w-7xl mx-auto flex flex-row justify-between items-center p-4 md:p-6 gap-4"
+        >
+          <h1 class="text-3xl font-bold text-[#B6B09F]">Nitin Chaturvedi</h1>
 
-                <div class="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
-                    <nav
-                        class="flex items-center justify-center border border-[#CCC5B9] rounded-full px-6 py-2 hover:scale-105 transition-transform duration-200">
-                        <ul class="flex gap-4 md:gap-6">
-                            <li><a href="#home"
-                                    class="text-[#03045E] font-medium hover:font-bold hover:scale-105 transition-all duration-200">Home</a>
-                            </li>
-                            <li><a href="#about"
-                                    class="text-[#03045E] font-medium hover:font-bold hover:scale-105 transition-all duration-200">About</a>
-                            </li>
-                            <li><a href="#work"
-                                    class="text-[#03045E] font-medium hover:font-bold hover:scale-105 transition-all duration-200">Work</a>
-                            </li>
-                            <li id="links"
-                                class="text-[#03045E] font-medium hover:font-bold hover:scale-105 transition-all duration-200 cursor-pointer">
-                                Links</li>
-                        </ul>
-                    </nav>
+          <nav class="relative">
+            <button
+              id="menu-toggle"
+              class="md:hidden text-[#B6B09F] p-2 rounded focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              <svg
+                class="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
 
-                </div>
-                <nav class="flex items-center justify-center border border-[#CCC5B9] rounded-full px-6 py-2">
-                    <ul class="flex gap-4 md:gap-6">
-                        <li><a href="https://www.instagram.com/nitinvedii/" target="_blank" rel="noopener noreferrer"
-                                class="text-[#03045E] font-medium hover:font-bold hover:scale-105 transition-all duration-200">Instagram</a>
-                        </li>
-                        <li><a href="https://x.com/nitinvedii" target="_blank" rel="noopener noreferrer"
-                                class="text-[#03045E] font-medium hover:font-bold hover:scale-105 transition-all duration-200" target="_blank">X.com</a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/in/chaturvedinitin"
-                                class="text-[#03045E] font-medium hover:font-bold hover:scale-105 transition-all duration-200" target="_blank">LinkedIn</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+            <ul
+              id="menu"
+              class="hidden md:flex flex-col md:flex-row items-center gap-4 md:gap-6 text-[#B6B09F] font-medium"
+            >
+              <li>
+                <a
+                  href="#home"
+                  class="hover:font-bold hover:scale-105 transition-all duration-200"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="hover:font-bold hover:scale-105 transition-all duration-200"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#work"
+                  class="hover:font-bold hover:scale-105 transition-all duration-200"
+                  >Work</a
+                >
+              </li>
+              <li
+                id="links"
+                class="cursor-pointer hover:font-bold hover:scale-105 transition-all duration-200"
+              >
+                Links
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-            <div class="flex flex-col-reverse md:flex-row justify-around items-center p-6 md:p-12 gap-8 md:gap-16 mt-[6vw]">
-                <div class="flex flex-col items-center md:items-start text-center md:text-left">
-                    <h2 class="text-2xl md:text-3xl font-semibold text-[#03045E] mb-2">
-                        Hello, I'm Nitin,
-                    </h2>
-                    <div class="flex flex-col">
-                        <h2 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-[#03045E] leading-tight">
-                            Web Developer
-                        </h2>
-                        <h2 class="text-2xl md:text-3xl font-semibold text-[#03045E] mt-2">
-                            based in India
-                        </h2>
-                    </div>
+      <script>
+        const header = document.getElementById("site-header");
+        let lastScrollY = window.scrollY;
 
-                    <button id="resume"
-                        class="relative inline-block w-32 h-11 leading-[2.5em] mt-8 md:mt-12 font-bold text-[17px] rounded-md border-2 border-[#03045E] text-[#03045E] bg-transparent overflow-hidden transition-colors duration-500 z-10 hover:text-white focus:outline-none"
-                        style="font-family: inherit; font-weight: 500;">
-                        <span class="relative z-20">Resume</span>
-                        <span class="absolute z-10 bg-[#03045E] rounded-full transition-all duration-700 ease-in-out
-                                w-[200px] h-[150px] left-full top-full
-                                group-hover:left-[-30px] group-hover:top-[-30px]
-                                pointer-events-none"
-                            style="transition-property: top, left, background; will-change: top, left, background;"></span>
-                    </button>
-                </div>
+        window.addEventListener("scroll", () => {
+          const currentScrollY = window.scrollY;
 
-                <div class="w-full md:w-auto flex justify-center">
-                    <img src="profile-pic.jpg" alt="Nitin Chaturvedi Profile Picture"
-                        class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-[#EB5E28] shadow-lg">
-                </div>
+          if (currentScrollY > lastScrollY && currentScrollY > 50) {
+            // scroll down — hide header
+            header.style.transform = "translateY(-100%)";
+          } else {
+            // scroll up — show header
+            header.style.transform = "translateY(0)";
+          }
+
+          lastScrollY = currentScrollY;
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+
+        menuToggle.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+          // Add black/10 background when menu is open on small screens
+          if (!menu.classList.contains("hidden")) {
+            header.classList.add("bg-black/10");
+          } else {
+            header.classList.remove("bg-black/10");
+          }
+        });
+
+        // Optional: Close menu on window resize > md
+        window.addEventListener("resize", () => {
+          if (window.innerWidth >= 768) {
+            menu.classList.remove("hidden");
+            header.classList.remove("bg-black/10");
+          } else {
+            menu.classList.add("hidden");
+          }
+        });
+      </script>
+
+      <section
+        id="home"
+        class="hero min-h-screen md:min-h-[40vh] lg:min-h-screen"
+      >
+        <div
+          class="flex flex-col-reverse md:flex-row justify-around items-center p-6 md:p-12 gap-8 md:gap-16 mt-[6vw]"
+        >
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <h2 class="text-2xl md:text-3xl font-semibold text-[#B6B09F] mb-2">
+              Hello, I'm Nitin,
+            </h2>
+            <div class="flex flex-col">
+              <h2
+                class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-[#B6B09F] leading-tight"
+              >
+                Web Developer
+              </h2>
+              <h2
+                class="text-2xl md:text-3xl font-semibold text-[#B6B09F] mt-2"
+              >
+                based in India
+              </h2>
             </div>
-        </section>
 
-        <section id="about" class="home py-12 px-2 md:px-4 lg:px-12 ">
-            <div class="max-w-8xl mx-auto">
-                <h2 class="text-5xl md:text-7xl lg:text-8xl font-bold text-[#EB5E28] mb-8">about.</h2>
-                <div class="px-4 md:px-8 text-lg md:text-xl lg:text-2xl font-light text-gray-800 space-y-4">
-                    <p>Hello, my name is Nitin Chaturvedi.</p>
-                    <p>I'm a full-stack web developer who loves building smart and simple websites.I work with PHP, MySQL, JavaScript, jQuery, and Tailwind CSS to turn ideas into real projects.</p>
-                    <p>You can trust me with your projects - I deliver clean, maintainable code on time.</p>
-                </div>
-            </div>
+            <button
+              id="resume"
+              class="relative inline-block w-32 h-11 leading-[2.5em] mt-8 md:mt-12 font-bold text-[17px] rounded-md border-2 border-[#B6B09F] text-[#B6B09F] bg-transparent overflow-hidden transition-colors duration-500 z-10 hover:text-white focus:outline-none"
+              style="font-family: inherit; font-weight: 500"
+            >
+              <span class="relative z-20">Resume</span>
+              <span
+                class="absolute z-10 bg-[#B6B09F] rounded-full transition-all duration-700 ease-in-out w-[200px] h-[150px] left-full top-full group-hover:left-[-30px] group-hover:top-[-30px] pointer-events-none"
+                style="
+                  transition-property: top, left, background;
+                  will-change: top, left, background;
+                "
+              ></span>
+            </button>
+          </div>
 
-            <div class="max-w-8xl mx-auto mt-16 md:mt-24">
-                <ul class="flex flex-col gap-12 md:gap-16 w-full">
-                    <li class="relative pl-8 border-l-4 border-[#EB5E28]">
-                        <div class="absolute -left-2.5 top-1 w-4 h-4 rounded-full bg-[#EB5E28]"></div>
-                        <span class="text-xl md:text-2xl font-bold text-gray-900">2019-2020</span>
-                        <p class="mt-2 text-lg md:text-xl text-gray-700">High School with 94.8%.
-                            I did my High Schools from Shiv Jyoti School.
-                        </p>
-                    </li>
-                    <li class="relative pl-8 border-l-4 border-[#EB5E28]">
-                        <div class="absolute -left-2.5 top-1 w-4 h-4 rounded-full bg-[#EB5E28]"></div>
-                        <span class="text-xl md:text-2xl font-bold text-gray-900">2021-2022</span>
-                        <p class="mt-2 text-lg md:text-xl text-gray-700">Senior Secondary with 89.8%.
-                            I did my Senior Secondary from Shiv Jyoti School.</p>
-                    </li>
-                    <li class="relative pl-8 border-l-4 border-[#EB5E28]">
-                        <div class="absolute -left-2.5 top-1 w-4 h-4 rounded-full bg-[#EB5E28]"></div>
-                        <span class="text-xl md:text-2xl font-bold text-gray-900">2023-2027</span>
-                        <p class="mt-2 text-lg md:text-xl text-gray-700">Bachelor in Technology with majors in CSE. Minor:Full Stack Development Open-Minor: UI/UX 
-                            GPA: 9.00
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </section>
+          <div class="w-full md:w-auto flex justify-center">
+            <img
+              src="profile-pic.jpg"
+              alt="Nitin Chaturvedi Profile Picture"
+              class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full object-cover border-4 border-[#732255] shadow-lg"
+            />
+          </div>
+        </div>
+      </section>
 
-        <section id="work" class="py-12 px-2 md:px-4 lg:px-12">
-            <div class="max-w-8xl mx-auto">
-                <h2 class="text-5xl md:text-7xl lg:text-8xl font-bold text-[#EB5E28] leading-tight mb-4">work.</h2>
-                <p class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-800">Below are my selected projects and
-                    best work</p>
-            </div>
-        </section>
+      <section id="about" class="home py-12 px-2 md:px-4 lg:px-12">
+        <div class="max-w-8xl mx-auto">
+          <h2
+            class="text-5xl md:text-7xl lg:text-8xl font-bold text-[#732255] mb-8"
+          >
+            about.
+          </h2>
+          <div
+            class="px-4 md:px-8 text-lg md:text-xl lg:text-2xl font-light text-[#EAE4D5] space-y-4"
+          >
+            <p>Hello, my name is Nitin Chaturvedi.</p>
+            <p>
+              I'm a full-stack web developer who loves building smart and simple
+              websites.I work with PHP, MySQL, JavaScript, jQuery, and Tailwind
+              CSS to turn ideas into real projects.
+            </p>
+            <p>
+              You can trust me with your projects - I deliver clean,
+              maintainable code on time.
+            </p>
+          </div>
+        </div>
 
-        <section class="py-12 px-2 md:px-4 lg:px-12">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-8xl mx-auto">
+        <div class="max-w-8xl mx-auto mt-16 md:mt-24">
+          <ul class="flex flex-col gap-12 md:gap-16 w-full">
+            <li class="relative pl-8 border-l-4 border-[#EB5E28]">
+              <div
+                class="absolute -left-2.5 top-1 w-4 h-4 rounded-full bg-[#EB5E28]"
+              ></div>
+              <span class="text-xl md:text-2xl font-bold text-[#EAE4D5]"
+                >2019-2020</span
+              >
+              <p class="mt-2 text-lg md:text-xl text-[#EAE4D5]">
+                High School with 94.8%. I did my High Schools from Shiv Jyoti
+                School.
+              </p>
+            </li>
+            <li class="relative pl-8 border-l-4 border-[#EB5E28]">
+              <div
+                class="absolute -left-2.5 top-1 w-4 h-4 rounded-full bg-[#EB5E28]"
+              ></div>
+              <span class="text-xl md:text-2xl font-bold text-[#EAE4D5]"
+                >2021-2022</span
+              >
+              <p class="mt-2 text-lg md:text-xl text-[#EAE4D5]">
+                Senior Secondary with 89.8%. I did my Senior Secondary from Shiv
+                Jyoti School.
+              </p>
+            </li>
+            <li class="relative pl-8 border-l-4 border-[#EB5E28]">
+              <div
+                class="absolute -left-2.5 top-1 w-4 h-4 rounded-full bg-[#EB5E28]"
+              ></div>
+              <span class="text-xl md:text-2xl font-bold text-[#EAE4D5]"
+                >2023-2027</span
+              >
+              <p class="mt-2 text-lg md:text-xl text-[#EAE4D5]">
+                Bachelor in Technology with majors in CSE. Minor:Full Stack
+                Development Open-Minor: UI/UX Grade: 9.00 GPA
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="work" class="py-12 px-2 md:px-4 lg:px-12">
+        <div class="max-w-8xl mx-auto">
+          <h2
+            class="text-5xl md:text-7xl lg:text-8xl font-bold text-[#732255] leading-tight mb-4"
+          >
+            work.
+          </h2>
+          <p
+            class="text-lg md:text-xl lg:text-2xl font-semibold text-[#EAE4D5]"
+          >
+            Below are my selected projects and best work
+          </p>
+        </div>
+      </section>
+
+      <section class="py-12 px-2 md:px-4 lg:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-8xl mx-auto">
+          <div
+            class="project-card flex flex-col gap-4 bg-[#000000] p-6 rounded-lg border border-[#B6B09F] max-w-xl shadow-md hover:shadow-lg transition-shadow"
+          >
+            <img
+              src="project_1.png"
+              alt="website project"
+              class="w-full h-48 md:h-64 object-cover rounded-lg"
+            />
+            <div class="text-sm text-[#B6B09F] font-light">April 15, 2025</div>
+            <h3 class="text-xl font-semibold text-center">
+              Feedack System For Power Supply Position
+            </h3>
+            <p class="text-[#B6B09F]">
+              This website is used to provide feedback on power supply
+              position.Tech stack used to implement this project: HTML,
+              Tailwind, Javscript for Front End and PHP for backend also JSON
+              framework and Jquery libraries were used
+            </p>
+            <a
+              href="https://github.com/chaturvedinitin/feedback_on_power_supply_position"
+              class="mt-2 text-[#EAE4D5] hover:underline inline-block"
+              >View Project →</a
+            >
+            <a
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7318670603790467076/"
+              class="mt-2 text-[#EAE4D5] hover:underline inline-block"
+              >Linkedin →</a
+            >
+          </div>
+
+          <div
+            class="project-card flex flex-col gap-4 bg-[#000000] border border-[#B6B09F] max-w-xl p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+          >
+            <img
+              src="image.png"
+              alt="Ecommerce website project"
+              class="w-full h-48 md:h-64 object-cover rounded-lg"
+            />
+            <div class="text-sm text-[#B6B09F] font-light">April 20, 2025</div>
+            <h3 class="text-xl font-semibold text-center">
+              Bank Fraud Detection System
+            </h3>
+            <p class="text-[#B6B09F]">
+              Machine Learning was used to train our model on a large dataset
+              where it learns a pattern for fraud transaction.It also implements
+              transaction checked history and provides statistics feedback on
+              transaction fraud. It can detect location automatically.
+            </p>
+            <a
+              href="https://github.com/chaturvedinitin/Banking_Fraud_Detection_System"
+              class="mt-2 text-[#EAE4D5] hover:underline inline-block"
+              >View Project →</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="contact" class="contact-section py-10 px-4 md:px-8 lg:px-12">
+        <div class="max-w-8xl mx-auto">
+          <h2
+            class="text-4xl md:text-6xl lg:text-7xl font-bold text-[#732255] mb-8 leading-tight"
+          >
+            contact <span class="text-[#732290]">me.</span>
+          </h2>
+
+          <div class="flex flex-col lg:flex-row gap-12 items-center">
+            <div class="w-full lg:w-2/5">
+              <div class="relative group">
+                <img
+                  class="w-full h-auto rounded-xl shadow-lg object-cover transform group-hover:scale-105 transition-transform duration-300"
+                  src="profile-pic.jpg"
+                  alt="Nitin Chaturvedi Profile Picture"
+                />
                 <div
-                    class="project-card flex flex-col gap-4 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <img src="project_1.png" alt="website project"
-                        class="w-full h-48 md:h-64 object-cover rounded-lg">
-                    <div class="text-sm text-gray-500 font-light">April 15, 2025</div>
-                    <h3 class="text-xl font-semibold text-center">Feedack System For Power Supply Position</h3>
-                    <p class="text-gray-700">This website is used to provide feedback on power supply position.Tech stack used to implement this project: HTML, Tailwind, Javscript for Front End and PHP for backend also JSON framework and Jquery libraries were used</p>
-                    <a href="https://github.com/chaturvedinitin/feedback_on_power_supply_position" class="mt-2 text-[#EB5E28] hover:underline inline-block">View Project →</a>
-                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:7318670603790467076/" class="mt-2 text-[#EB5E28] hover:underline inline-block">Linkedin Presentation →</a>
+                  class="absolute inset-0 border-2 border-[#EB5E28] rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+                ></div>
+              </div>
+            </div>
+
+            <div class="w-full lg:w-3/5">
+              <p class="text-lg md:text-xl text-gray-700 mb-8">
+                I'm currently available for freelance work and collaborations.
+                Feel free to reach out through any of these channels:
+              </p>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div
+                  class="contact-card p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
+                  <div class="flex items-center gap-4 mb-3">
+                    <div class="bg-[#EB5E28]/10 p-3 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-[#EAE4D5]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        />
+                      </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900">Email</h3>
+                  </div>
+                  <a
+                    href="mailto:chaturvediinitin@gmail.com"
+                    class="text-gray-600 hover:text-[#EAE4D5] transition-colors"
+                  >
+                    chaturvediinitin@gmail.com
+                  </a>
                 </div>
 
                 <div
-                    class="project-card flex flex-col gap-4 bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <img src="image.png" alt="Ecommerce website project"
-                        class="w-full h-48 md:h-64 object-cover rounded-lg">
-                    <div class="text-sm text-gray-500 font-light">April 20, 2025</div>
-                    <h3 class="text-xl font-semibold text-center">Bank Fraud Detection System</h3>
-                    <p class="text-gray-700">Machine Learning was used to train our model on a large dataset where it learns a pattern for fraud transaction.It also implements transaction checked history and provides statistics feedback on transaction fraud. It can detect location automatically.</p>
-                    <a href="https://github.com/chaturvedinitin/Banking_Fraud_Detection_System" class="mt-2 text-[#EB5E28] hover:underline inline-block">View Project →</a>
-                </div>
-            </div>
-        </section>
-
-
-        <section id="contact" class="contact-section py-10 px-4 md:px-8 lg:px-12">
-            <div class="max-w-8xl mx-auto">
-                <h2 class="text-4xl md:text-6xl lg:text-7xl font-bold text-[#EB5E28] mb-8 leading-tight">
-                    contact <span class="text-gray-900">me.</span>
-                </h2>
-
-                <div class="flex flex-col lg:flex-row gap-12 items-center">
-                    <div class="w-full lg:w-2/5">
-                        <div class="relative group">
-                            <img class="w-full h-auto rounded-xl shadow-lg object-cover transform group-hover:scale-105 transition-transform duration-300"
-                                src="profile-pic.jpg"
-                                alt="Nitin Chaturvedi Profile Picture">
-                            <div
-                                class="absolute inset-0 border-2 border-[#EB5E28] rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                            </div>
-                        </div>
+                  class="contact-card p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
+                  <div class="flex items-center gap-4 mb-3">
+                    <div class="bg-[#EB5E28]/10 p-3 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-[#EAE4D5]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                        />
+                      </svg>
                     </div>
-
-                    <div class="w-full lg:w-3/5">
-                        <p class="text-lg md:text-xl text-gray-700 mb-8">
-                            I'm currently available for freelance work and collaborations. Feel free to reach out
-                            through any of these channels:
-                        </p>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div
-                                class="contact-card p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div class="flex items-center gap-4 mb-3">
-                                    <div class="bg-[#EB5E28]/10 p-3 rounded-full">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#EB5E28]"
-                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                        </svg>
-                                    </div>
-                                    <h3 class="font-semibold text-gray-900">Email</h3>
-                                </div>
-                                <a href="mailto:chaturvediinitin@gmail.com"
-                                    class="text-gray-600 hover:text-[#EB5E28] transition-colors">
-                                    chaturvediinitin@gmail.com
-                                </a>
-                            </div>
-
-                            <div
-                                class="contact-card p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div class="flex items-center gap-4 mb-3">
-                                    <div class="bg-[#EB5E28]/10 p-3 rounded-full">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#EB5E28]"
-                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                        </svg>
-                                    </div>
-                                    <h3 class="font-semibold text-gray-900">Phone</h3>
-                                </div>
-                                <a href="tel:+1234567890" class="text-gray-600 hover:text-[#EB5E28] transition-colors">
-                                    +91 7068072233
-                                </a>
-                            </div>
-
-                            <div
-                                class="contact-card p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div class="flex items-center gap-4 mb-3">
-                                    <div class="bg-[#EB5E28]/10 p-3 rounded-full">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#EB5E28]"
-                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                                        </svg>
-                                    </div>
-                                    <h3 class="font-semibold text-gray-900">Social</h3>
-                                </div>
-                                <div class="flex gap-4">
-                                    <a href="https://x.com/nitinvedii" target="_blank" rel="noopener noreferrer"
-                                        class="text-gray-600 hover:text-[#EB5E28] transition-colors">
-                                        Twitter/X
-                                    </a>
-                                    <a href="https://instagram.com/nitinvedii" target="_blank" rel="noopener noreferrer"
-                                        class="text-gray-600 hover:text-[#EB5E28] transition-colors">
-                                        Instagram
-                                    </a>
-                                    <a href="https://linkedin.com/in/nitinvedii" target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="text-gray-600 hover:text-[#EB5E28] transition-colors">
-                                        LinkedIn
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div
-                                class="contact-card p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
-                                <div class="flex items-center gap-4 mb-3">
-                                    <div class="bg-[#EB5E28]/10 p-3 rounded-full">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#EB5E28]"
-                                            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                    </div>
-                                    <h3 class="font-semibold text-gray-900">Location</h3>
-                                </div>
-                                <p class="text-gray-600">Uttar Pradesh, India</p>
-                            </div>
-                        </div>
-                    </div>
+                    <h3 class="font-semibold text-gray-900">Phone</h3>
+                  </div>
+                  <a
+                    href="tel:+1234567890"
+                    class="text-gray-600 hover:text-[#EAE4D5] transition-colors"
+                  >
+                    +91 7068072233
+                  </a>
                 </div>
+
+                <div
+                  class="contact-card p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
+                  <div class="flex items-center gap-4 mb-3">
+                    <div class="bg-[#EB5E28]/10 p-3 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-[#EAE4D5]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                        />
+                      </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900">Social</h3>
+                  </div>
+                  <div class="flex gap-4">
+                    <a
+                      href="https://x.com/nitinvedii"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gray-600 hover:text-[#EAE4D5] transition-colors"
+                    >
+                      Twitter/X
+                    </a>
+                    <a
+                      href="https://instagram.com/nitinvedii"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gray-600 hover:text-[#EAE4D5] transition-colors"
+                    >
+                      Instagram
+                    </a>
+                    <a
+                      href="https://linkedin.com/in/nitinvedii"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="text-gray-600 hover:text-[#EAE4D5] transition-colors"
+                    >
+                      LinkedIn
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="contact-card p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-300"
+                >
+                  <div class="flex items-center gap-4 mb-3">
+                    <div class="bg-[#EB5E28]/10 p-3 rounded-full">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-[#EAE4D5]"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-900">Location</h3>
+                  </div>
+                  <p class="text-gray-600">Uttar Pradesh, India</p>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section> -->
+
+      <div
+        class="contacts flex flex-col lg:flex-row justify-around min-h-screen p-6 lg:p-10 gap-10"
+      >
+        <!-- Left Column: Contact Info -->
+        <div class="flex flex-col w-full lg:w-1/2">
+          <div class="text-[7vw] lg:text-[5vw] font-bold leading-tight mb-8">
+            Let's do something awesome
+          </div>
+
+          <!-- Address -->
+          <div class="flex items-start gap-4 mb-6">
+            <img
+              class="w-8 h-8"
+              src="https://img.icons8.com/?size=100&id=NdJU7uZDtxbe&format=png&color=000000"
+              alt="Address Icon"
+            />
+            <div>
+              <div class="font-semibold">Address</div>
+              <div>Gorakhpur, India</div>
+            </div>
+          </div>
+
+          <!-- Phone and Email -->
+          <div class="flex items-start gap-4 mb-6">
+            <img
+              class="w-8 h-8"
+              src="https://img.icons8.com/?size=100&id=66624&format=png&color=000000"
+              alt="Phone Icon"
+            />
+            <div>
+              <div class="font-semibold">Phone & Email</div>
+              <div>(+91) 7068072233</div>
+              <div>
+                <a
+                  class="text-blue-500 underline"
+                  href="mailto:chaturvediinitin@gmail.com"
+                  >chaturvediinitin@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="flex items-center gap-4 mt-6">
+            <a href="https://www.instagram.com/nitinvedii/"
+              ><img
+                class="w-6 lg:w-8"
+                src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000"
+                alt="Instagram"
+            /></a>
+            <a href="https://x.com/nitinvedii"
+              ><img
+                class="w-6 lg:w-8"
+                src="https://img.icons8.com/?size=100&id=ClbD5JTFM7FA&format=png&color=000000"
+                alt="Twitter"
+            /></a>
+            <a href="https://www.linkedin.com/in/chaturvedinitin"
+              ><img
+                class="w-6 lg:w-8"
+                src="https://img.icons8.com/?size=100&id=60ZV_wYC0BM2&format=png&color=000000"
+                alt="LinkedIn"
+            /></a>
+          </div>
+        </div>
+
+        <!-- Right Column: Form -->
+        <div class="w-full lg:w-1/2">
+          <div class="text-[5vw] lg:text-[2vw] font-medium mb-6">
+            Hey, how about we catch up and have a chat?
+          </div>
+          <form action="" class="flex flex-col gap-4 w-full">
+            <div>
+              <label for="name" class="block text-sm font-medium m-2"
+                >Full Name*</label
+              >
+              <input
+                class="w-full bg-black border border-[#252422] text-[#F2F2F2] h-10 p-4 rounded-2xl"
+                type="text"
+                id="name"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium m-2"
+                >Email*</label
+              >
+              <input
+                class="w-full bg-black border border-[#252422] text-[#F2F2F2] h-10 p-4 rounded-2xl"
+                type="email"
+                id="email"
+                required
+              />
+            </div>
+            <div>
+              <label for="mobile" class="block text-sm font-medium m-2"
+                >Mobile*</label
+              >
+              <input
+                class="w-full bg-black border border-[#252422] text-[#F2F2F2] h-10 p-4 rounded-2xl"
+                type="tel"
+                id="mobile"
+                required
+              />
+            </div>
+            <div>
+              <label for="details" class="block text-sm font-medium m-2"
+                >Write Project Details*</label
+              >
+              <textarea
+                class="w-full bg-black border border-[#252422] text-[#F2F2F2] p-4 rounded-2xl"
+                id="details"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="bg-[#732290] text-white rounded-xl py-2 px-4 mt-4"
+            >
+              Submit
+            </button>
+            <div id="status" class="text-sm font-medium mt-2 text-white"></div>
+            <div id="loader" class="hidden mt-2">
+              <div class="flex items-center gap-2 text-[#732290] animate-pulse">
+                <svg
+                  class="w-5 h-5 animate-spin"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    class="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    stroke-width="4"
+                  ></circle>
+                  <path
+                    class="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8v4l3-3-3-3v4a8 8 0 100 16v-4l-3 3 3 3v-4a8 8 0 01-8-8z"
+                  ></path>
+                </svg>
+                <span>Sending message...</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+    <script>
+      const form = document.querySelector("form");
+      const loader = document.getElementById("loader");
+      const status = document.getElementById("status");
 
+      const scriptURL =
+        // "https://script.google.com/macros/s/AKfycbyn3XftzLnF1a5V42mMkd3M4UNMNsBChE6tEzq9Dx6Q-mX20VIAoNFdcYb5YWWoB0VX/exec"; // Replace with your actual Web App URL
+        "https://script.google.com/macros/s/AKfycbxyjdafCIgAKJ3yLTs8-a9grDtgUviI_y4FSy_k2ei_dUGA7Gih7HY-i47fHrwufKWI/exec"; // Replace with your actual Web App URL
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        loader.classList.remove("hidden");
+        status.textContent = "";
+        status.classList.remove("text-green-500", "text-red-500");
+
+        const data = {
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          mobile: document.getElementById("mobile").value,
+          details: document.getElementById("details").value,
+        };
+
+        // Basic validation
+        if (!data.name || !data.email || !data.mobile || !data.details) {
+          loader.classList.add("hidden");
+          status.textContent = "Please fill in all required fields.";
+          status.classList.add("text-red-500");
+          return;
+        }
+
+        fetch(scriptURL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: new URLSearchParams(data).toString(),
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            loader.classList.add("hidden");
+            if (res.result === "success") {
+              status.textContent = "Message sent successfully!";
+              status.classList.add("text-green-500");
+              form.reset();
+            } else {
+              status.textContent = "Something went wrong. Try again.";
+              status.classList.add("text-red-500");
+            }
+          })
+          .catch((err) => {
+            loader.classList.add("hidden");
+            status.textContent = "Failed to send message.";
+            status.classList.add("text-red-500");
+          });
+      });
+    </script>
 
     <script>
-        document.getElementById('links').addEventListener('click', () => {
-            // const overlay = document.createElement('div');
-            const body = document.getElementById('body');
-            const overlay = document.getElementById('overlay');
-            // body.classList.toggle('');
-            overlay.classList.toggle('hidden');
-            document.getElementById('closeOverlay').onclick = function () {
-                document.getElementById('overlay').classList.add('hidden');
-            };
-        });
-        document.getElementById('resume').addEventListener('click', (e) => {
-            e.preventDefault();
-            setTimeout(() => {
-                const file = document.getElementById('file');
-                file.classList.remove('hidden');
-                document.getElementById('close').onclick = function () {
-                    file.classList.add('hidden');
-                };
-                file.onclick = function (event) {
-                    if (event.target === file) {
-                        file.classList.add('hidden');
-                    }
-                };
-            }, 600);
-        });
+      document.getElementById("links").addEventListener("click", () => {
+        const body = document.getElementById("body");
+        const overlay = document.getElementById("overlay");
+        overlay.classList.toggle("hidden");
+        document.getElementById("closeOverlay").onclick = function () {
+          document.getElementById("overlay").classList.add("hidden");
+        };
+      });
+      document.getElementById("resume").addEventListener("click", (e) => {
+        e.preventDefault();
+        setTimeout(() => {
+          const file = document.getElementById("file");
+          file.classList.remove("hidden");
+          document.getElementById("close").onclick = function () {
+            file.classList.add("hidden");
+          };
+          file.onclick = function (event) {
+            if (event.target === file) {
+              file.classList.add("hidden");
+            }
+          };
+        }, 600);
+      });
 
-        const resumeBtn = document.getElementById('resume');
-        resumeBtn.addEventListener('mouseenter', function () {
-            const bg = this.querySelector('span.absolute');
-            bg.style.left = '-30px';
-            bg.style.top = '-30px';
-        });
-        resumeBtn.addEventListener('mouseleave', function () {
-            const bg = this.querySelector('span.absolute');
-            bg.style.left = '100%';
-            bg.style.top = '100%';
-        });
-        resumeBtn.addEventListener('mousedown', function () {
-            const bg = this.querySelector('span.absolute');
-            bg.style.background = '#3a0ca3';
-        });
-        resumeBtn.addEventListener('mouseup', function () {
-            const bg = this.querySelector('span.absolute');
-            bg.style.background = '#560bad';
-        });
-
+      const resumeBtn = document.getElementById("resume");
+      resumeBtn.addEventListener("mouseenter", function () {
+        const bg = this.querySelector("span.absolute");
+        bg.style.left = "-30px";
+        bg.style.top = "-30px";
+      });
+      resumeBtn.addEventListener("mouseleave", function () {
+        const bg = this.querySelector("span.absolute");
+        bg.style.left = "100%";
+        bg.style.top = "100%";
+      });
+      resumeBtn.addEventListener("mousedown", function () {
+        const bg = this.querySelector("span.absolute");
+        bg.style.background = "#3a0ca3";
+      });
+      resumeBtn.addEventListener("mouseup", function () {
+        const bg = this.querySelector("span.absolute");
+        bg.style.background = "#560bad";
+      });
     </script>
-</body>
-
+  </body>
 </html>
